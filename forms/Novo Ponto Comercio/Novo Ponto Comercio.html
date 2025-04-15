@@ -1,0 +1,102 @@
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src gap://ready file://* *; style-src 'self' http://* https://* 'unsafe-inline'; script-src 'self' http://* https://* 'unsafe-inline' 'unsafe-eval'">
+
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css" />
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+	<div class="fluig-style-guide">
+
+		<form name="form" role="form">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">i18n.translate("requisitante")</h3>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="form-group col-md-6">
+							<label for="email">i18n.translate("email")</label>
+							<input type="email" name="email" class="form-control" id="exampleInputEmail1">
+						</div>
+						<div class="form-group col-md-4">
+							<label for="nome">i18n.translate("nome")</label>
+							<input type="nome" name="nome" class="form-control" id="exampleInputNome">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="telefone">i18n.translate("telofone")</label>
+							<input type="number" name="telefone" class="form-control" id="exampleInputTelefone" >
+						</div>
+					</div>
+				</div>
+			</div>
+
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">i18n.translate("documento")</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="form-group col-md-4">
+								<label for="documentoIdentidade">i18n.translate("documento")</label>
+								<input type="text" name="documentoIdentidadene" class="form-control" id="documentoIdentidade">
+							</div>
+							<div class="form-group col-md-2">
+								<label for="dataNascimento">i18n.translate("aniversario")</label>
+								<input type="text" name="dataNascimento" class="form-control" id="dataNascimento" mask="00/00/0000">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">i18n.translate("pontoComercial")</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="form-group col-md-2">
+								<label for="cep">i18n.translate("CEP")</label>
+								<input type="text" name="cep" class="form-control" id="cep" mask = "00000-000">
+							</div>
+							<div class="form-group col-md-3">
+								<label for="logradouro">i18n.translate("logradouro")</label>
+								<input type="text" name="logradouro" class="form-control" id="logradouro">
+							</div>
+							<div class="form-group col-md-1">
+								<label for="numero">i18n.translate("numero")</label>
+								<input type="text" name="numero" class="form-control" id="numero">
+							</div>
+							<div class="form-group col-md-2">
+								<label for="bairro">i18n.translate("bairro")</label>
+								<input type="text" name="bairro" class="form-control" id="bairro">
+							</div>
+							<div class="form-group col-md-2">
+								<label for="cidade">i18n.translate("cidade")</label>
+								<input type="text" name="cidade" class="form-control" id="cidade">
+							</div>
+							<div class="form-group col-md-2">
+								<label for="estado">i18n.translate("estado")</label>
+								<input type="text" name="estado" class="form-control" id="estado">
+							</div>
+			
+						</div>
+					</div>
+				</div>		
+		</form>
+	</div>
+
+	<script type="text/javascript" src="atividade.js"></script>
+	<script type="text/javascript">
+		var mySimpleCalendar = FLUIGC.calendar('#dataNascimento');
+	</script>
+</body>
+
+</html>
