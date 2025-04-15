@@ -23,13 +23,13 @@
 				</div>
 				<div class="panel-body">
 					<div class="row">
-						<div class="form-group col-md-6">
-							<label for="email">i18n.translate("email")</label>
-							<input type="email" name="email" class="form-control" id="exampleInputEmail1">
-						</div>
 						<div class="form-group col-md-4">
 							<label for="nome">i18n.translate("nome")</label>
 							<input type="nome" name="nome" class="form-control" id="exampleInputNome">
+						</div>
+						<div class="form-group col-md-6">
+							<label for="email">i18n.translate("email")</label>
+							<input type="email" name="email" class="form-control" id="exampleInputEmail1">
 						</div>
 						<div class="form-group col-md-2">
 							<label for="telefone">i18n.translate("telofone")</label>
@@ -64,7 +64,7 @@
 						<div class="row">
 							<div class="form-group col-md-2">
 								<label for="cep">i18n.translate("CEP")</label>
-								<input type="text" name="cep" class="form-control" id="cep" mask = "00000-000">
+								<input type="text" name="cep" class="form-control" id="cep" mask = "00000-000" maxlength = "9">
 							</div>
 							<div class="form-group col-md-3">
 								<label for="logradouro">i18n.translate("logradouro")</label>
@@ -89,6 +89,7 @@
 			
 						</div>
 					</div>
+
 				</div>		
 		</form>
 	</div>
