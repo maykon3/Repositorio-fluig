@@ -2,14 +2,14 @@
   <ProcessDefinition>
     <processDefinitionPK>
       <companyId>1</companyId>
-      <processId>novo_diagrama</processId>
+      <processId>NovoPontoM</processId>
     </processDefinitionPK>
-    <processDescription>novo_diagrama</processDescription>
+    <processDescription>NovoPontoM</processDescription>
     <instruction></instruction>
     <active>true</active>
     <publicProcess>false</publicProcess>
     <volumeId>Default</volumeId>
-    <categoryId></categoryId>
+    <categoryId>AgoraCosmeticosM</categoryId>
     <managerEngineAllocationId></managerEngineAllocationId>
     <snapshotFrequency>0</snapshotFrequency>
     <baseDay>0</baseDay>
@@ -27,11 +27,11 @@
   <ProcessDefinitionVersion>
     <processDefinitionVersionPK>
       <companyId>1</companyId>
-      <processId>novo_diagrama</processId>
-      <version>1</version>
+      <processId>NovoPontoM</processId>
+      <version>3</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
-    <formId>0</formId>
+    <formId>1329</formId>
     <editionMode>true</editionMode>
     <updateAttachmentsVersion>false</updateAttachmentsVersion>
     <controlsAttachmentsSecurity>false</controlsAttachmentsSecurity>
@@ -49,9 +49,9 @@
     <ProcessState>
       <processStatePK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
+        <processId>NovoPontoM</processId>
         <version>1</version>
-        <sequence>4</sequence>
+        <sequence>3</sequence>
       </processStatePK>
       <stateName>Início</stateName>
       <stateDescription>Início</stateDescription>
@@ -99,7 +99,59 @@
     <ProcessState>
       <processStatePK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
+        <processId>NovoPontoM</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </processStatePK>
+      <stateName>Atividade Super</stateName>
+      <stateDescription>Atividade Super</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <deadlineFieldName></deadlineFieldName>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId>Associado</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssociatedController ConditionAssociated=&quot;AND&quot;&gt;&lt;ControlXML TypeAssociated=&quot;Papel&quot;&gt;&lt;AssignmentController&gt;&lt;Role&gt;AprovadoresM&lt;/Role&gt;&lt;/AssignmentController&gt;&lt;/ControlXML&gt;&lt;ControlXML TypeAssociated=&quot;Grupo&quot;&gt;&lt;AssignmentController&gt;&lt;Group&gt;SuperM&lt;/Group&gt;&lt;/AssignmentController&gt;&lt;/ControlXML&gt;&lt;/AssociatedController&gt;</engineAllocationConfiguration>
+      <selectColleague>1</selectColleague>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
+      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId></subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>320</positionX>
+      <positionY>240</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>false</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <periodId></periodId>
+      <stateType>0</stateType>
+      <bpmnType>80</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <executionType>0</executionType>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>NovoPontoM</processId>
         <version>1</version>
         <sequence>5</sequence>
       </processStatePK>
@@ -111,6 +163,7 @@
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
       <engineAllocationId>Associado</engineAllocationId>
+      <engineAllocationConfiguration>&lt;AssociatedController ConditionAssociated=&quot;AND&quot;&gt;&lt;ControlXML TypeAssociated=&quot;Papel&quot;&gt;&lt;AssignmentController&gt;&lt;Role&gt;AprovadoresM&lt;/Role&gt;&lt;/AssignmentController&gt;&lt;/ControlXML&gt;&lt;ControlXML TypeAssociated=&quot;Grupo&quot;&gt;&lt;AssignmentController&gt;&lt;Group&gt;NovosNegociosM&lt;/Group&gt;&lt;/AssignmentController&gt;&lt;/ControlXML&gt;&lt;/AssociatedController&gt;</engineAllocationConfiguration>
       <selectColleague>1</selectColleague>
       <initialState>false</initialState>
       <notifyAuthorityDelay>true</notifyAuthorityDelay>
@@ -150,60 +203,59 @@
     <ProcessState>
       <processStatePK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
+        <processId>NovoPontoM</processId>
         <version>1</version>
-        <sequence>7</sequence>
+        <sequence>12</sequence>
       </processStatePK>
-      <stateName>Atividade Super</stateName>
-      <stateDescription>Atividade Super</stateDescription>
+      <stateName>Cadastro Sub</stateName>
+      <stateDescription>Cadastro Sub</stateDescription>
       <instruction></instruction>
       <deadlineTime>0</deadlineTime>
-      <deadlineFieldName></deadlineFieldName>
       <joint>false</joint>
       <agreementPercentage>0</agreementPercentage>
-      <engineAllocationId>Associado</engineAllocationId>
-      <selectColleague>1</selectColleague>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
       <initialState>false</initialState>
-      <notifyAuthorityDelay>true</notifyAuthorityDelay>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
       <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
-      <allowanceAuthorityTime>3600</allowanceAuthorityTime>
-      <frequenceAuthorityTime>3600</frequenceAuthorityTime>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
       <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
       <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
       <transferAttachments>false</transferAttachments>
-      <subProcessId></subProcessId>
+      <subProcessId>CadastroNovoPontoM</subProcessId>
       <formFolder>0</formFolder>
-      <notifyAuthorityFollowUp>true</notifyAuthorityFollowUp>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
-      <positionX>370</positionX>
-      <positionY>237</positionY>
+      <positionX>400</positionX>
+      <positionY>374</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
-      <notifyManagerDelay>false</notifyManagerDelay>
+      <notifyManagerDelay>true</notifyManagerDelay>
       <allowanceManagerTime>0</allowanceManagerTime>
       <frequenceManagerTime>0</frequenceManagerTime>
       <inhibitTransfer>false</inhibitTransfer>
-      <periodId></periodId>
-      <stateType>0</stateType>
-      <bpmnType>80</bpmnType>
+      <stateType>2</stateType>
+      <bpmnType>100</bpmnType>
       <signalId>0</signalId>
       <counterSign>false</counterSign>
       <openInstances>0</openInstances>
       <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
       <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
       <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <cancelSubProcess>false</cancelSubProcess>
       <destinationStates/>
       <digitalSignature>false</digitalSignature>
-      <executionType>0</executionType>
+      <sendToNextTaskInSubProcess>true</sendToNextTaskInSubProcess>
     </ProcessState>
     <ProcessState>
       <processStatePK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
+        <processId>NovoPontoM</processId>
         <version>1</version>
-        <sequence>9</sequence>
+        <sequence>6</sequence>
       </processStatePK>
       <stateName>Fim</stateName>
       <stateDescription>Fim</stateDescription>
@@ -228,7 +280,7 @@
       <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
       <automatic>false</automatic>
       <positionX>560</positionX>
-      <positionY>254</positionY>
+      <positionY>384</positionY>
       <forecastedEffortType>0</forecastedEffortType>
       <forecastedEffort>0</forecastedEffort>
       <notifyManagerFollowUp>false</notifyManagerFollowUp>
@@ -251,13 +303,13 @@
     <ProcessLink>
       <processLinkPK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
+        <processId>NovoPontoM</processId>
         <version>1</version>
-        <linkSequence>6</linkSequence>
+        <linkSequence>7</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>4</initialStateSequence>
+      <initialStateSequence>3</initialStateSequence>
       <finalStateSequence>5</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
@@ -268,14 +320,14 @@
     <ProcessLink>
       <processLinkPK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
+        <processId>NovoPontoM</processId>
         <version>1</version>
         <linkSequence>8</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>5</initialStateSequence>
-      <finalStateSequence>7</finalStateSequence>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -285,14 +337,31 @@
     <ProcessLink>
       <processLinkPK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
+        <processId>NovoPontoM</processId>
+        <version>1</version>
+        <linkSequence>9</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>4</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>NovoPontoM</processId>
         <version>1</version>
         <linkSequence>10</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>7</initialStateSequence>
-      <finalStateSequence>9</finalStateSequence>
+      <initialStateSequence>5</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -302,14 +371,31 @@
     <ProcessLink>
       <processLinkPK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
+        <processId>NovoPontoM</processId>
         <version>1</version>
-        <linkSequence>11</linkSequence>
+        <linkSequence>14</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>5</initialStateSequence>
-      <finalStateSequence>9</finalStateSequence>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>12</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>NovoPontoM</processId>
+        <version>1</version>
+        <linkSequence>15</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>12</initialStateSequence>
+      <finalStateSequence>6</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
       <automaticLink>false</automaticLink>
@@ -332,25 +418,9 @@
       <parentSequence>0</parentSequence>
       <swimLanePK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
+        <processId>NovoPontoM</processId>
         <version>1</version>
         <sequence>1</sequence>
-      </swimLanePK>
-    </SwimLane>
-    <SwimLane>
-      <color>C0C0C0</color>
-      <height>101</height>
-      <width>581</width>
-      <positionX>80</positionX>
-      <positionY>220</positionY>
-      <stateName>final</stateName>
-      <type>2</type>
-      <parentSequence>0</parentSequence>
-      <swimLanePK>
-        <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
-        <version>1</version>
-        <sequence>2</sequence>
       </swimLanePK>
     </SwimLane>
     <SwimLane>
@@ -364,9 +434,41 @@
       <parentSequence>0</parentSequence>
       <swimLanePK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
+        <processId>NovoPontoM</processId>
+        <version>1</version>
+        <sequence>2</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>C0C0C0</color>
+      <height>120</height>
+      <width>581</width>
+      <positionX>80</positionX>
+      <positionY>221</positionY>
+      <stateName>Super</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>NovoPontoM</processId>
         <version>1</version>
         <sequence>3</sequence>
+      </swimLanePK>
+    </SwimLane>
+    <SwimLane>
+      <color>FFFFFF</color>
+      <height>120</height>
+      <width>581</width>
+      <positionX>80</positionX>
+      <positionY>340</positionY>
+      <stateName>Sistemas</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>NovoPontoM</processId>
+        <version>1</version>
+        <sequence>4</sequence>
       </swimLanePK>
     </SwimLane>
   </list>
@@ -376,9 +478,9 @@
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
-        <version>1</version>
-        <linkSequence>6</linkSequence>
+        <processId>NovoPontoM</processId>
+        <version>3</version>
+        <linkSequence>7</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
       <positionX>167</positionX>
@@ -387,24 +489,46 @@
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
-        <version>1</version>
+        <processId>NovoPontoM</processId>
+        <version>3</version>
         <linkSequence>8</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
-      <positionX>272</positionX>
-      <positionY>271</positionY>
+      <positionX>517</positionX>
+      <positionY>275</positionY>
     </ProcessLinkBend>
     <ProcessLinkBend>
       <processLinkBendPK>
         <companyId>1</companyId>
-        <processId>novo_diagrama</processId>
-        <version>1</version>
-        <linkSequence>11</linkSequence>
+        <processId>NovoPontoM</processId>
+        <version>3</version>
+        <linkSequence>9</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>272</positionX>
+      <positionY>274</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>NovoPontoM</processId>
+        <version>3</version>
+        <linkSequence>10</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
       <positionX>577</positionX>
       <positionY>171</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>NovoPontoM</processId>
+        <version>3</version>
+        <linkSequence>14</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>372</positionX>
+      <positionY>400</positionY>
     </ProcessLinkBend>
   </list>
   <list/>
@@ -416,8 +540,8 @@
     <ProcessAppConfiguration>
       <id>0</id>
       <tenantId>0</tenantId>
-      <processId>novo_diagrama</processId>
-      <processVersion>1</processVersion>
+      <processId>NovoPontoM</processId>
+      <processVersion>3</processVersion>
       <stateSequence>5</stateSequence>
       <appKey>approval</appKey>
       <appField>title</appField>
@@ -426,8 +550,8 @@
     <ProcessAppConfiguration>
       <id>0</id>
       <tenantId>0</tenantId>
-      <processId>novo_diagrama</processId>
-      <processVersion>1</processVersion>
+      <processId>NovoPontoM</processId>
+      <processVersion>3</processVersion>
       <stateSequence>5</stateSequence>
       <appKey>approval</appKey>
       <appField>description</appField>
@@ -436,8 +560,8 @@
     <ProcessAppConfiguration>
       <id>0</id>
       <tenantId>0</tenantId>
-      <processId>novo_diagrama</processId>
-      <processVersion>1</processVersion>
+      <processId>NovoPontoM</processId>
+      <processVersion>3</processVersion>
       <stateSequence>5</stateSequence>
       <appKey>approval</appKey>
       <appField>highlight</appField>
@@ -446,8 +570,8 @@
     <ProcessAppConfiguration>
       <id>0</id>
       <tenantId>0</tenantId>
-      <processId>novo_diagrama</processId>
-      <processVersion>1</processVersion>
+      <processId>NovoPontoM</processId>
+      <processVersion>3</processVersion>
       <stateSequence>5</stateSequence>
       <appKey>approval</appKey>
       <appField>approve</appField>
@@ -456,8 +580,8 @@
     <ProcessAppConfiguration>
       <id>0</id>
       <tenantId>0</tenantId>
-      <processId>novo_diagrama</processId>
-      <processVersion>1</processVersion>
+      <processId>NovoPontoM</processId>
+      <processVersion>3</processVersion>
       <stateSequence>5</stateSequence>
       <appKey>approval</appKey>
       <appField>reject</appField>
