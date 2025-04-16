@@ -1,10 +1,9 @@
 function createDataset(fields, constraints, sortFields) {
 	var ds = DatasetBuilder.newDataset();
-	ds.addColumn("Login");
-	ds.addColumn("Nome");
+	ds.addColumn("login");
+	ds.addColumn("nome");
 
-	var filtroGrupo = DatasetFactory.createConstraint("colleagueGroupPK.groupId", "ResponsavelM",
-		"ResponsavelM", ConstraintType.MUST);
+	var filtroGrupo = DatasetFactory.createConstraint("colleagueGroupPK.groupId", "ResponsavelM", "ResponsavelM", ConstraintType.MUST);
 
 	var datasetGrupo = DatasetFactory.getDataset("colleagueGroup", null, new Array(filtroGrupo), null);
 
