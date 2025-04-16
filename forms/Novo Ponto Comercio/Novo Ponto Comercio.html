@@ -49,12 +49,17 @@
 						<div class="form-group col-md-4">
 							<label for="documentoIdentidade">i18n.translate("documento")</label>
 							<input type="text" name="documentoIdentidadene" class="form-control"
-								id="documentoIdentidade">
+								id="documentoIdentidade " mask="00.000.000/00" maxlength="14">
 						</div>
 						<div class="form-group col-md-2">
 							<label for="dataNascimento">i18n.translate("aniversario")</label>
 							<input type="text" name="dataNascimento" class="form-control" id="dataNascimento"
 								mask="00/00/0000">
+						</div>
+						<div class="form-group col-md-4">
+							<label for="documentoIdentidade">CPF (opcional)</label>
+							<input type="text" name="documentoPessoa" class="form-control"
+								id="documentoPessoa " mask="000.000.000-00" maxlength="14">
 						</div>
 					</div>
 				</div>
@@ -89,11 +94,52 @@
 							<label for="estado">i18n.translate("estado")</label>
 							<input type="text" name="estado" class="form-control" id="estado">
 						</div>
-
 					</div>
-				</div>
+					<div class="row">
+						<div class="form-group col-md-2">
+							<label for="tipoPonto">Pais</label>
+								<select class="form-control" name = "pais" id="pais">
+									<option>Brasil</option>
+									<option>EUA</option>
+									<option>Uruguai</option>
+								</select>
+					</div>
 
+						<div class="form-group col-md-2">
+							<label for="tipoPonto">Tipo de Ponto</label>
+								<select class="form-control" name = "tipoPonto" id="tipoPonto">
+									<option>Quiosque</option>
+									<option>Loja</option>
+								</select>
+					
+					</div>
+
+					<div class="form-group col-md-5">
+							<label for="dias">Dias de Funcionamento</label>
+							<div class="checkbox">
+								<label class="checkbox-inline">
+									<input type="checkbox" name="segunda" id="segunda" value="option1"> Seg
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" name="terca" id="terca" value="option2"> Ter
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" name="quarta" id="quarta" value="option3"> Qua
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" name="quinta" id="quinta" value="option4"> Qui
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" name="sexta" id="sexta" value="option5"> Sex
+								</label>
+							</div>
+					</div>
+					</div>
+
+					
+				</div>
 			</div>
+
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title">i18n.translate("financeiro")</h3>
@@ -114,25 +160,24 @@
 							</div>
 						</div>
 					</div>
-
+					</div>
 				</div>
-			</div>
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h3 class="panel-title">Proprietario</h3>
-				</div>
-				<div class="panel-body">
-					<table tablename="respoTable" class="table table-hover" addbuttonlabel="Adicionar Responsavel"
-						addbuttonclass="btn btn-primary btn-lg active">
-						<thead>
-							<tr>
-								<td>Responsavel</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<input type="zoom" class="form-control" id="testeDS" name="testeDS" data-zoom="
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Proprietario</h3>
+					</div>
+					<div class="panel-body">
+						<table tablename="respoTable" class="table table-hover" addbuttonlabel="Adicionar Responsavel"
+							addbuttonclass="btn btn-primary btn-lg active">
+							<thead>
+								<tr>
+									<td>Responsavel</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input type="zoom" class="form-control" id="testeDS" name="testeDS" data-zoom="
 										{
 											'displayKey':'nome',
 											'placeholder': 'Selecione um Resposavel para o Ponto Comercial',
@@ -147,21 +192,20 @@
 												'standard':true
 											}]
 										}">
-								</td>
-							</tr>
+									</td>
+								</tr>
 
-						</tbody>
-					</table>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
-	</div>
-	</form>
-	</div>
+		</form>
 
-	<script type="text/javascript" src="atividade.js"></script>
-	<script type="text/javascript">
-		var mySimpleCalendar = FLUIGC.calendar('#dataNascimento');
-	</script>
+		<script type="text/javascript" src="atividade.js"></script>
+		<script type="text/javascript">
+			var mySimpleCalendar = FLUIGC.calendar('#dataNascimento');
+		</script>
 </body>
 
 </html>
