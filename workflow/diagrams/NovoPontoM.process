@@ -2018,7 +2018,7 @@
     <fonts name="Arial" size="8"/>
     <fonts bold="true" name="Arial" size="8"/>
   </pi:Diagram>
-  <bpmn2:BpmnProcess author="" cardIndex="1329" category="AgoraCosmeticosM" complementsLevel="1" expedient="Default" extendedFields="&lt;list/&gt;" formSource="server" id="NovoPontoM" instruction="" keyWord="" name="NovoPontoM" notifyRequisitionerComplements="true" notifyResponsibleComplements="true" serverId="compila" version="4" volume="Default"/>
+  <bpmn2:BpmnProcess author="" cardIndex="1329" category="AgoraCosmeticosM" complementsLevel="1" expedient="Default" extendedFields="&lt;list/&gt;" formSource="server" id="NovoPontoM" instruction="" keyWord="" name="NovoPontoM" notifyRequisitionerComplements="true" notifyResponsibleComplements="true" serverId="compila" version="7" volume="Default"/>
   <bpmn2:BpmnSwimLane cores="82b0b7" id="bpmnswimlane1" name="Solicitante"/>
   <bpmn2:BpmnSwimLane cores="FFFFFF" id="bpmnswimlane2" name="Novo Negocio"/>
   <bpmn2:BpmnStartEvent esforcoCalculo="0" expediente="" id="startevent3" name="In&#237;cio" outgoing="flow7" selecionaColaboradores="1" signalId="0" type="10"/>

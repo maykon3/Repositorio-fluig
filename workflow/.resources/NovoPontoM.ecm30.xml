@@ -28,7 +28,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>NovoPontoM</processId>
-      <version>4</version>
+      <version>7</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>1329</formId>
@@ -404,7 +404,43 @@
     </ProcessLink>
   </list>
   <list/>
-  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>NovoPontoM</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(colleagueId, nextSequenceId, userList) {&#xd;
+	    var attachments = hAPI.listAttachments();&#xd;
+	    var hasAttachment = false;&#xd;
+	  &#xd;
+	    for (var i = 0; i &lt; attachments.size(); i++) {&#xd;
+	        var attachment = attachments.get(i);&#xd;
+	        if (attachment.getDocumentDescription() == &quot;Proposta Comercial.pdf&quot;) {&#xd;
+	            hasAttachment = true;&#xd;
+	        }&#xd;
+	    }&#xd;
+	  &#xd;
+	    if (!hasAttachment) {&#xd;
+	        throw &quot;Adicione um PDF, salvo como: Proposta Comercial!&quot;;&#xd;
+	    }&#xd;
+	}</eventDescription>
+    </WorkflowProcessEvent>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>afterTaskSave</eventId>
+        <processId>NovoPontoM</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function afterTaskSave(colleagueId,nextSequenceId,userList){&#xd;
+	&#xd;
+	&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
   <list/>
   <list>
     <SwimLane>
@@ -479,7 +515,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoM</processId>
-        <version>4</version>
+        <version>7</version>
         <linkSequence>7</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -490,7 +526,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoM</processId>
-        <version>4</version>
+        <version>7</version>
         <linkSequence>8</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -501,7 +537,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoM</processId>
-        <version>4</version>
+        <version>7</version>
         <linkSequence>9</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -512,7 +548,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoM</processId>
-        <version>4</version>
+        <version>7</version>
         <linkSequence>10</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -523,7 +559,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoM</processId>
-        <version>4</version>
+        <version>7</version>
         <linkSequence>14</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -541,7 +577,7 @@
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>NovoPontoM</processId>
-      <processVersion>4</processVersion>
+      <processVersion>7</processVersion>
       <stateSequence>5</stateSequence>
       <appKey>approval</appKey>
       <appField>title</appField>
@@ -551,7 +587,7 @@
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>NovoPontoM</processId>
-      <processVersion>4</processVersion>
+      <processVersion>7</processVersion>
       <stateSequence>5</stateSequence>
       <appKey>approval</appKey>
       <appField>description</appField>
@@ -561,7 +597,7 @@
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>NovoPontoM</processId>
-      <processVersion>4</processVersion>
+      <processVersion>7</processVersion>
       <stateSequence>5</stateSequence>
       <appKey>approval</appKey>
       <appField>highlight</appField>
@@ -571,7 +607,7 @@
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>NovoPontoM</processId>
-      <processVersion>4</processVersion>
+      <processVersion>7</processVersion>
       <stateSequence>5</stateSequence>
       <appKey>approval</appKey>
       <appField>approve</appField>
@@ -581,7 +617,7 @@
       <id>0</id>
       <tenantId>0</tenantId>
       <processId>NovoPontoM</processId>
-      <processVersion>4</processVersion>
+      <processVersion>7</processVersion>
       <stateSequence>5</stateSequence>
       <appKey>approval</appKey>
       <appField>reject</appField>
