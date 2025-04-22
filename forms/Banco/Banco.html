@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css" />
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+	<div class="fluig-style-guide">
+		<form name="form" role="form">
+			<div id="formPrincipal">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Banco de Talentos</h3>
+					</div>
+					<div class="panel-body">
+						<div class="form-group">
+
+							<div class="form-group">
+								<label for="nome">Nome</label>
+								<input type="text" class="form-control" name="nome" id="nome"
+									placeholder="Insira seu nome">
+							</div>
+							<div class="row">
+								<div class="form-group col-md-4">
+									<label for="Email">Email</label>
+									<input type="email" class="form-control" name="email" id="email"
+										placeholder="Insira seu email">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="login">Login</label>
+									<input type="text" class="form-control" id="login" name="login" placeholder="Login">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="senha">Senha</label>
+									<input type="password" class="form-control" id="senha" name="senha"
+										placeholder="Insira uma senha forte">
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-md-6">
+									<label for="perfil">Perfil</label>
+									<select class="form-control" name="perfil" id="perfil">
+										<option>Desenvolvedor</option>
+										<option>QA</option>
+										<option>Analista</option>
+										<option>Scrum Master</option>
+										<option>Suport Help desk</option>
+									</select>
+								</div>
+								<div class="form-group col-md-6">
+									<label for="linkedIn">LinkedIn</label>
+									<input type="text" class="form-control" id="linkedIn" name="linkedIn"
+										placeholder="Linkedin\in.com">
+								</div>
+							</div>
+							<button type="button" id="botao" class="btn btn-default btn-lg active ">Criar
+								Usuario</button>
+							<button type="button" id="secundario" class="btn btn-primary btn-lg active btn-primary ">
+								Adicionar a Comunidade
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript" src="criarUsuario.js"></script>
+
+</html>
