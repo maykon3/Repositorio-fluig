@@ -11,7 +11,7 @@ $("#botao").click(function() {
     DatasetFactory.getDataset("criaUser", null, constraints, null);
 
     FLUIGC.toast({
-        message: 'Usuário' + $("#nome").val() +   'criado com sucesso!',
+        message: 'Usuário' + $("#nome").val() + 'criado com sucesso!',
         type: 'info'
     });
 });
