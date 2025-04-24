@@ -17,17 +17,19 @@
 				</div>
 				<div class="panel-body">
 					<table tablename="respoTable" class="table table-hover" addbuttonlabel=" Adicionar "
-						addbuttonclass="btn btn-primary btn-lg active">
+						addbuttonclass="btn btn-primary btn-lg active" noaddbutton=true>
 						<thead>
 							<tr>
 								<td><b>Preco</b></td>
 								<td><b>Produto</b></td>
+								<td><i class="flaticon flaticon-format-list-numbered icon-xl" aria-hidden="true" style="cursor: pointer" onclick="addLinha ();"></i></td>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td><input type="text" name="txt_preco" class="form-control"></td>
 								<td><input type="text" name="txt_produto" class="form-control"></td>
+								<td></td>
 							</tr>
 						</tbody>
 					</table>
